@@ -9,10 +9,8 @@ It supports TOTP (time-based) and HOTP (counter-based) OTP generation, ideal for
 ## Features
 * Generate TOTP (time-based) OTPs
 * Generate HOTP (counter-based) OTPs
-* JSON API with live Try-It support
 * CORS enabled for web usage
 * Rate-limited: 60 requests per minute per IP
-* Lightweight and easy to deploy with Flask
 
 ## Installation
 
